@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-cairo: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Primary Brand Colors -> utilities: bg-primary, text-primary, border-primary */
+  --color-primary: #2D7D6F;
+  --color-primary-dark: #1F5C52;
+  --color-primary-muted: #4A9E8E;
+  --color-primary-light: #E8F4F1;
+
+  /* Surfaces & Backgrounds -> utilities: bg-page, bg-surface, bg-surface-alt, bg-surface-dark */
+  --color-page: #F7F5F0;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F0EDE6;
+  --color-surface-dark: #1C2B28;
+
+  /* Typography / Content Colors -> utilities: text-charcoal, text-body, text-muted */
+  --color-charcoal: #1C2B28;
+  --color-body: #4A6360;
+  --color-muted: #8A9E9B;
+
+  /* Borders -> utilities: border-border-line, border-border-subtle */
+  --color-border-line: #DDD9D0;
+  --color-border-subtle: #EDEBE5;
+
+  /* Status Colors */
+  --color-status-success: #3A8C6E;
+  --color-status-success-bg: #E6F4EE;
+  --color-status-warning: #C87D2A;
+  --color-status-warning-bg: #FDF3E4;
+  --color-status-error: #B84040;
+  --color-status-error-bg: #FAEAEA;
+  --color-status-info: #2D6E9A;
+  --color-status-info-bg: #E6F0F8;
+}
+
+/* CSS Custom Properties for Direct Access or Inline Styles */
+:root {
+  --cm-primary: #2D7D6F;
+  --cm-primary-dark: #1F5C52;
+  --cm-primary-light: #E8F4F1;
+  --cm-bg: #F7F5F0;
+  --cm-surface: #FFFFFF;
+  --cm-surface-alt: #F0EDE6;
+  --cm-charcoal: #1C2B28;
+  --cm-body: #4A6360;
+  --cm-muted: #8A9E9B;
+  --cm-border: #DDD9D0;
+
+  font-family: var(--font-sans);
+}
+
+[dir="rtl"] {
+  font-family: var(--font-cairo);
+}
